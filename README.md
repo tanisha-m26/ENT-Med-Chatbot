@@ -128,6 +128,7 @@ open up localhost:
    - PINECONE_API_KEY
    - GROQ_API_KEY
    - OPENAI_API_KEY
+   - GROQ_API_KEY
 
 
 # 8. Sequential Git Bash Commands (From Environment Creation to App Run):
