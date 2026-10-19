@@ -153,7 +153,8 @@ pip install -r requirements.txt
 
 ```bash
 # 4. Install all extra required packages and dependency fixes manually 
-pip install groq langchain-groq langchain-huggingface fontTools --upgrade langchain-pinecone pinecone-client sentence-transformers
+pip install groq langchain-groq langchain-huggingface fontTools protobuf googleapis-common-protos grpcio --upgrade langchain-pinecone pinecone-client sentence-transformers
+
 ```
 
 ### STEP 03- Data Ingestion & Running the Server

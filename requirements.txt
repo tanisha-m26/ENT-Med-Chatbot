@@ -11,4 +11,11 @@ langchain_experimental
 groq
 langchain-groq
 langchain-huggingface
+fontTools
+protobuf
+googleapis-common-protos
+grpcio
 -e .
+
+
+
