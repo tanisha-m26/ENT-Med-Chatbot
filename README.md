@@ -128,3 +128,43 @@ open up localhost:
    - PINECONE_API_KEY
    - GROQ_API_KEY
    - OPENAI_API_KEY
+
+
+# 8. Sequential Git Bash Commands (From Environment Creation to App Run):
+### STEP 01- Create a conda environment after opening the repository
+
+```bash
+# 1. Create the conda environment
+conda create -n medibot python=3.10 -y
+```
+
+```bash
+# 2. Activate the environment
+conda activate medibot
+```
+
+### STEP 02- install the requirements
+
+```bash
+# 3. Install standard requirements from your file
+pip install -r requirements.txt
+```
+
+```bash
+# 4. Install all extra required packages and dependency fixes manually 
+pip install groq langchain-groq langchain-huggingface fontTools --upgrade langchain-pinecone pinecone-client sentence-transformers
+```
+
+### STEP 03- Data Ingestion & Running the Server
+
+```bash
+# 5. Execute data parser to process text chunks and upload vectors into Pinecone
+python store_index.py
+```
+
+```bash
+# 6. Launch your local Flask web server port
+python app.py
+```
+
+   
